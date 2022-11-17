@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Varela+Round&display=swap");
 body {
-height: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   background-color: #e4a406;
   font-family: "Varela Round", sans-serif;
 }
-.container {width: 100%; height: 100%;display: flex; flex-direction: column;}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Header Styling */
 header {
@@ -38,11 +43,9 @@ footer {
   font-style: italic;
   color: white;
   text-align: center;
-  position: fixed;
   margin: 10px 0 0 0;
   padding-bottom: 10px;
   width: 100%;
-  bottom: 0;
 }
 .footerContact > p {
   padding-bottom: 5px;
@@ -124,19 +127,20 @@ nav > ul > li > a:hover {
 /* main content styling */
 main {
   display: flex;
-  flex-direction: column;  
-  height: 100%;}
+  flex-direction: column;
+  height: 100%;
+}
 main > section {
-    margin: 10px;
-    padding: 15px;
-    background-color: #c98c0c;
-    border-radius: 15px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #c98c0c;
+  border-radius: 15px;
 }
-main > section:first-child{
-    background-color: #e4a406;
+main > section:first-child {
+  background-color: #e4a406;
 }
-main > section:last-child{
-    background-color: #a37412;
+main > section:last-child {
+  background-color: #a37412;
 }
 
 /* table styling */
