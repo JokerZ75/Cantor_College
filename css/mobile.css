@@ -141,6 +141,8 @@ main > section {
 }
 main > section:first-child {
   position: relative;
+  margin-bottom: 0;
+  padding-bottom: 6px;
   background-color: #e4a406;
 }
 .courseSearch > label,
