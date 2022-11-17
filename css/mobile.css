@@ -158,6 +158,7 @@ main > section:last-child {
 .imgGal {
   width: 100%;
   height: auto;
+  min-height: 277.5px;
 }
 .imageIndicator {
   display: inline;
