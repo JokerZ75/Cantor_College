@@ -2,8 +2,7 @@
   const burger = document.getElementById("burger");
   const dropDown = document.querySelectorAll(".Dropdown");
   const nav = document.querySelector("nav");
-  var navHeight = nav.offsetHeight;
-console.info(navHeight);
+  
   for (let i = 0; i < dropDown.length; i++) {
     dropDown[i].addEventListener("click", (ev) => {
       ev.preventDefault();
