@@ -2,13 +2,12 @@
   const burger = document.getElementById("burger");
   const dropDown = document.querySelectorAll(".Dropdown");
   const nav = document.querySelector("nav");
-  
+
   for (let i = 0; i < dropDown.length; i++) {
     dropDown[i].addEventListener("click", (ev) => {
       ev.preventDefault();
       let currentDropDown = ev.target;
-      let query =
-        "." + currentDropDown.classList[1].toLowerCase() + "DropdownContent";
+      let query = "." + currentDropDown.classList[1].toLowerCase() + "DropdownContent";
       let dropdownContent = document.querySelector(query);
 
       if (dropdownContent.style.height == "0em") {

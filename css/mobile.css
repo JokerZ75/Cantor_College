@@ -154,6 +154,7 @@ main > section:last-child {
 .imgGal {
   width: 100%;
   height: auto;
+  transition: opacity 400ms linear;
 }
 .imageIndicator {
     display: inline;

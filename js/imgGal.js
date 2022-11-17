@@ -4,6 +4,8 @@ const images = [
   "../images/Cantor_Inside.jpg",
 ];
 let index = -1;
+let indicators = document.querySelectorAll(".imageIndicator > img");
+let imageGallary = document.querySelector(".imgGal");
 
 (function () {
   ChangeImage();
@@ -11,10 +13,26 @@ let index = -1;
 })();
 
 function ChangeImage() {
-  imageGallary = document.querySelector(".imgGal");
   index++;
   if (index >= images.length - 1) {
-    index = 0;
+    imageGallary.setAttribute("src", images[index]);
+    indicators[index].setAttribute("src", "../images/record.png");
+    indicators[index - 1].setAttribute("src", "../images/circle.png");
+    index = -1;
+    return;
+  } else {
+    imageGallary.setAttribute("src", images[index]);
   }
-  imageGallary.setAttribute("src", images[index]);
+
+  if (index == 0) {
+    indicators[index].setAttribute("src", "../images/record.png");
+    indicators[indicators.length - 1].setAttribute(
+      "src",
+      "../images/circle.png"
+    );
+  } else {
+    indicators[index].setAttribute("src", "../images/record.png");
+    indicators[index - 1].setAttribute("src", "../images/circle.png");
+  }
 }
+
