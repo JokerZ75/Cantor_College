@@ -3,9 +3,7 @@
   const dropDown = document.querySelectorAll(".Dropdown");
   const nav = document.querySelector("nav");
   const navHeight = nav.offsetHeight;
-  let dropDownHeight = document.querySelector(".dropdownContent").offsetHeight;
-  console.info(dropDownHeight);
-  console.info(navHeight);
+  const dropDownHeight = document.querySelector(".dropdownContent").offsetHeight;
 
   for (let i = 0; i < dropDown.length; i++) {
     dropDown[i].addEventListener("click", (ev) => {

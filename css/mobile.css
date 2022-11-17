@@ -84,7 +84,7 @@ nav > ul {
   padding-left: 0;
 }
 nav > ul > li {
-  border-bottom: 2px solid #4e3f19; 
+  border-bottom: 2px solid #4e3f19;
 }
 nav > ul > li:last-child {
   border-bottom: none;
@@ -158,17 +158,16 @@ main > section:last-child {
 .imgGal {
   width: 100%;
   height: auto;
-  transition: opacity 400ms linear;
 }
 .imageIndicator {
-    display: inline;
+  display: inline;
   position: absolute;
   bottom: 30px;
   right: 20px;
   background-color: white;
   border-radius: 15px;
   padding: 6px 4px 4px 4px;
-  opacity:60%;
+  opacity: 60%;
 }
 .imageIndicator img {
   width: 25px;
@@ -176,17 +175,17 @@ main > section:last-child {
   opacity: 100%;
   height: auto;
 }
-.aboutUsBtn{
-    display: inline;
-    position: absolute;
-    background-color: #867858;
-    color: white;
-    border-radius: 10px;
-    padding: 4px;
-    margin: 4px;
-    font-size: 20px;
-    bottom: 30px;
-    left: 20px;
+.aboutUsBtn {
+  display: inline;
+  position: absolute;
+  background-color: #867858;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px;
+  font-size: 20px;
+  bottom: 30px;
+  left: 20px;
 }
 
 /* table styling */
@@ -206,8 +205,8 @@ tr {
 }
 
 .findUsMap > h2 {
-    display: inline-block;
-    margin: 0 0 10px 0;
-    background-color: #4e3f19;
-    color: #fff;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  background-color: #4e3f19;
+  color: #fff;
 }
