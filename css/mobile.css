@@ -49,6 +49,7 @@ footer {
 }
 .footerContact > p {
   padding-bottom: 5px;
+  padding-top: 5px;
   margin: 0;
   border-bottom: 5px solid #a6a6a6;
 }
@@ -69,7 +70,6 @@ footer {
   margin: 5px;
   border-radius: 5%;
 }
-
 nav {
   display: flex;
   flex-direction: column;
