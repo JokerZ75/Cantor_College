@@ -75,7 +75,7 @@ nav {
   flex-direction: column;
   overflow: hidden;
   padding: 0 5px 0 5px;
-  transition: height 500ms ease;
+  transition: height 400ms ease;
 }
 nav > ul {
   list-style: none;

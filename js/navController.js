@@ -17,8 +17,11 @@
             element.style.height = "0em";
         });
         dropdownContent.style.height = "5em";
+        nav.style.height = "22em";
+        
       } else {
         dropdownContent.style.height = "0em";
+        nav.style.height = "16em";
       }
     });
     dropDown[i].click();
@@ -26,7 +29,7 @@
 
   burger.addEventListener("click", () => {
     if (nav.style.height == "0em") {
-      nav.style.height = "20em";
+      nav.style.height = "16em";
     } else {
       nav.style.height = "0em";
       let allDropDown = document.querySelectorAll(".dropdownContent");
