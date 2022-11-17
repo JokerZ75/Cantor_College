@@ -75,7 +75,7 @@ nav {
   flex-direction: column;
   overflow: hidden;
   padding: 0 5px 0 5px;
-  transition: height 400ms ease;
+  transition: height 300ms ease;
 }
 nav > ul {
   list-style: none;
@@ -94,7 +94,7 @@ nav > ul > li > a {
   background-color: #a37412;
   color: white;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.75em;
   text-decoration: none;
 }
 nav > ul > li > a:hover {
@@ -120,7 +120,7 @@ nav > ul > li > a:hover {
   background-color: #a37412;
   color: white;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.75em;
   text-decoration: none;
 }
 

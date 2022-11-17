@@ -2,7 +2,8 @@
   const burger = document.getElementById("burger");
   const dropDown = document.querySelectorAll(".Dropdown");
   const nav = document.querySelector("nav");
-
+  var navHeight = nav.offsetHeight;
+console.info(navHeight);
   for (let i = 0; i < dropDown.length; i++) {
     dropDown[i].addEventListener("click", (ev) => {
       ev.preventDefault();
@@ -16,12 +17,12 @@
         allOtherDropDown.forEach(element => {
             element.style.height = "0em";
         });
-        dropdownContent.style.height = "5em";
-        nav.style.height = "22em";
+        dropdownContent.style.height = "4.75em";
+        nav.style.height = "19em";
         
       } else {
         dropdownContent.style.height = "0em";
-        nav.style.height = "16em";
+        nav.style.height = "14em";
       }
     });
     dropDown[i].click();
@@ -29,7 +30,7 @@
 
   burger.addEventListener("click", () => {
     if (nav.style.height == "0em") {
-      nav.style.height = "16em";
+      nav.style.height = "14em";
     } else {
       nav.style.height = "0em";
       let allDropDown = document.querySelectorAll(".dropdownContent");
