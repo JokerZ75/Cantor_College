@@ -140,6 +140,11 @@ main > section {
 main > section:first-child {
   background-color: #e4a406;
 }
+.courseSearch > label ,
+.courseSearch > input ,
+.couseSearch > button {
+    margin-bottom: 10px;
+}
 main > section:last-child {
   background-color: #a37412;
 }
