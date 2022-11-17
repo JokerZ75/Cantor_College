@@ -132,28 +132,56 @@ main {
   width: 100%;
 }
 main > section {
-  margin: 10px;
-  padding: 15px;
+  margin: 0 10px 8px 10px;
+  padding: 10px;
   background-color: #c98c0c;
   border-radius: 15px;
 }
 main > section:first-child {
+  position: relative;
   background-color: #e4a406;
 }
-.courseSearch > label ,
-.courseSearch > input ,
+.courseSearch > label,
+.courseSearch > input,
 .couseSearch > button {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 main > section:last-child {
   background-color: #a37412;
 }
 
-/* images scaling */
-.imgGal{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+/* images */
+.imgGal {
+  width: 100%;
+  height: auto;
+}
+.imageIndicator {
+    display: inline;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 6px 4px 4px 4px;
+  opacity:60%;
+}
+.imageIndicator img {
+  width: 25px;
+  margin: 4px;
+  opacity: 100%;
+  height: auto;
+}
+.aboutUsBtn{
+    display: inline;
+    position: absolute;
+    background-color: #867858;
+    color: white;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 4px;
+    font-size: 20px;
+    bottom: 30px;
+    left: 20px;
 }
 
 /* table styling */
