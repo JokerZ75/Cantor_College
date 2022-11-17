@@ -129,6 +129,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 main > section {
   margin: 10px;
@@ -141,6 +142,13 @@ main > section:first-child {
 }
 main > section:last-child {
   background-color: #a37412;
+}
+
+/* images scaling */
+.imgGal{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 /* table styling */
