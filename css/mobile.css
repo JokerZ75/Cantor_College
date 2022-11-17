@@ -80,10 +80,11 @@ nav {
 nav > ul {
   list-style: none;
   margin: 0;
+
   padding-left: 0;
 }
 nav > ul > li {
-  border-bottom: 2px solid #4e3f19;
+  border-bottom: 2px solid #4e3f19; 
 }
 nav > ul > li:last-child {
   border-bottom: none;
@@ -92,6 +93,7 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
   background-color: #a37412;
+  border-radius: 5px;
   color: white;
   font-weight: bold;
   font-size: 1.75em;
@@ -133,7 +135,7 @@ main {
 }
 main > section {
   margin: 0 10px 8px 10px;
-  padding: 10px;
+  padding: 12px;
   background-color: #c98c0c;
   border-radius: 15px;
 }
@@ -145,6 +147,8 @@ main > section:first-child {
 .courseSearch > input,
 .couseSearch > button {
   margin-bottom: 10px;
+  width: 85%;
+  border-radius: 8px;
 }
 main > section:last-child {
   background-color: #a37412;
@@ -199,4 +203,11 @@ td {
 tr {
   border-bottom: 2px solid #000;
   background-color: #fff;
+}
+
+.findUsMap > h2 {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    background-color: #4e3f19;
+    color: #fff;
 }
