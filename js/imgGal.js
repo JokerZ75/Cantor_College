@@ -1,7 +1,7 @@
 const images = [
-  "../images/Cantor_College_Charles_Enterance_min.jpg",
-  "../images/Cantor_College_StayBright.jpg",
-  "../images/Cantor_Inside.jpg",
+  "images/Cantor_College_Charles_Enterance_min.jpg",
+  "images/Cantor_College_StayBright.jpg",
+  "images/Cantor_Inside.jpg",
 ];
 let index = -1;
 let indicators = document.querySelectorAll(".imageIndicator > img");
@@ -16,8 +16,8 @@ function ChangeImage() {
   index++;
   if (index >= images.length - 1) {
     imageGallary.setAttribute("src", images[index]);
-    indicators[index].setAttribute("src", "../images/record.png");
-    indicators[index - 1].setAttribute("src", "../images/circle.png");
+    indicators[index].setAttribute("src", "images/record.png");
+    indicators[index - 1].setAttribute("src", "images/circle.png");
     index = -1;
     return;
   } else {
@@ -25,14 +25,14 @@ function ChangeImage() {
   }
 
   if (index == 0) {
-    indicators[index].setAttribute("src", "../images/record.png");
+    indicators[index].setAttribute("src", "images/record.png");
     indicators[indicators.length - 1].setAttribute(
       "src",
-      "../images/circle.png"
+      "images/circle.png"
     );
   } else {
-    indicators[index].setAttribute("src", "../images/record.png");
-    indicators[index - 1].setAttribute("src", "../images/circle.png");
+    indicators[index].setAttribute("src", "images/record.png");
+    indicators[index - 1].setAttribute("src", "images/circle.png");
   }
 }
 
