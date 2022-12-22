@@ -1,5 +1,5 @@
 <div id="headerMainContent">
-    <a href="index.html">
+    <a href="index.php">
         <img src="images/logo_min.png" alt="Cantor College Logo" />
     </a>
     <div class="CurrentPage">
@@ -13,7 +13,7 @@
 </div>
 <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li>
             <a href="#" class="Dropdown Courses">Courses
                 <img src="images/arrow-down-sign-to-navigate.png" alt="drop down arrow" /></a>

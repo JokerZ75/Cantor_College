@@ -208,12 +208,12 @@ input[name = "searchBox"]{
   border-radius: 5px;
 }
 .submitButton{
-  width: 5%;
-  margin-top: 5px;
+  width: 10%;
   border-radius: 5px;
   background-image: url("../images/magnifying-glass.png");
-  background-size: cover;
+  background-size: 15px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 table {
   width: 100%;

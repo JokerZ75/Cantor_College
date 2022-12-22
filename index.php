@@ -1,7 +1,5 @@
 <?php
 require_once("includes/config.php");
-$query = "SELECT Course_id, CourseTitle, CourseType, CourseAwardName FROM course_list_data ";
-$result = $mysqli->query($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,10 +36,10 @@ $result = $mysqli->query($query);
       </section>
       <section>
         <div class="courseSearch">
-          <form action="" id = "searchArea">
+          <form method ="get" action="index.php" id = "searchArea">
             <label for="searchBox"></label>
-            <input type="text" placeholder="Search for course" name="searchBox"/>
-            <input type="sumbit" value= "" class = "submitButton" />
+            <input type="text" placeholder="Search for course name" name="searchBox"/>
+            <input type="submit" value= " " class = "submitButton" />
           </form>
           <table id="homeBasicTable">
             <tr>
@@ -50,6 +48,19 @@ $result = $mysqli->query($query);
               <th scope="col">Couse award</th>
             </tr>
             <?php
+            // Check For Search Here If Non Load All
+            $searchQuery = $_GET['searchBox'] ?? null;
+            if (is_null($searchQuery) || $searchQuery == ""){
+              $result = $mysqli->query("SELECT Course_id, CourseTitle, CourseType, CourseAwardName FROM course_list_data");
+            }
+            else{
+              $searchQuery = "%" . $searchQuery . "%";
+              $stmt = $mysqli->prepare("SELECT Course_id, CourseTitle, CourseType, CourseAwardName FROM course_list_data WHERE CourseTitle LIKE ?");
+              $stmt->bind_param('s', $searchQuery);
+              $stmt->execute();
+              $result = $stmt->get_result();
+              echo "<p>Your Search Found {$result->num_rows} Results. Search With an Empty Field to Reset. </p>";
+            }
             while ($obj = $result->fetch_object()) {
               echo "<tr>";
               echo "<td><a href=\"CourseExtraDetails.php?Course_id={$obj->Course_id}\">{$obj->CourseTitle}</a></td>";
