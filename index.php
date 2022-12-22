@@ -23,24 +23,26 @@ $result = $mysqli->query($query);
     </header>
     <main>
       <section>
-        <img src="" class="imgGal" alt="Gallary of images of Cantor College" />
-        <button type="button" onclick="taketoabout" class="aboutUsBtn">
-          About Us
-          <img src="images/right-arrow.png" alt="arrow to about us" width="15px" />
-        </button>
-        <div class="imageIndicator">
-          <img src="images/circle.png" alt="" />
-          <img src="images/circle.png" alt="" />
-          <img src="images/circle.png" alt="" />
+        <div id=imgGallary>
+          <img src="" class="imgGal" alt="Gallary of images of Cantor College" />
+          <button type="button" onclick="location.href = 'about_us.php' " class="aboutUsBtn">
+            About Us
+            <img src="images/right-arrow.png" alt="arrow to about us" width="15px" />
+          </button>
+          <div class="imageIndicator">
+            <img src="images/circle.png" alt="" />
+            <img src="images/circle.png" alt="" />
+            <img src="images/circle.png" alt="" />
+          </div>
         </div>
       </section>
       <section>
         <div class="courseSearch">
-          <label for="searchBox"></label>
-          <input type="text" placeholder="Search for course" id="searchBox" />
-          <button type="button" onclick="somephpjs">
-            <img src="images/magnifying-glass.png" alt="Search Button" width="10px" />
-          </button>
+          <form action="" id = "searchArea">
+            <label for="searchBox"></label>
+            <input type="text" placeholder="Search for course" name="searchBox"/>
+            <input type="sumbit" value= "" class = "submitButton" />
+          </form>
           <table id="homeBasicTable">
             <tr>
               <th scope="col">Course title</th>
@@ -48,8 +50,7 @@ $result = $mysqli->query($query);
               <th scope="col">Couse award</th>
             </tr>
             <?php
-            while ($obj = $result->fetch_object()) 
-            {
+            while ($obj = $result->fetch_object()) {
               echo "<tr>";
               echo "<td><a href=\"CourseExtraDetails.php?Course_id={$obj->Course_id}\">{$obj->CourseTitle}</a></td>";
               echo "<td>{$obj->CourseType}</td>";

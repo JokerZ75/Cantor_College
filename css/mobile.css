@@ -17,6 +17,9 @@ body {
 header {
   background-color: #4e3f19;
   height: 100%;
+  position: sticky;
+  z-index: 1;
+  top:0;
 }
 
 #headerMainContent {
@@ -138,24 +141,19 @@ main > section {
   border-radius: 15px;
 }
 main > section:first-child {
-  position: relative;
   margin-bottom: 0;
   padding-bottom: 6px;
   background-color: #e4a406;
 }
 
-.courseSearch > label,
-.courseSearch > input,
-.couseSearch > button {
-  margin-bottom: 10px;
-  width: 85%;
-  border-radius: 8px;
-}
 main > section:last-child {
   background-color: #a37412;
 }
 
 /* images */
+#imgGallary{
+  position: relative;
+}
 .imgGal {
   width: 100%;
   height: auto;
@@ -164,8 +162,8 @@ main > section:last-child {
 .imageIndicator {
   display: inline;
   position: absolute;
-  bottom: 30px;
-  right: 20px;
+  bottom: 20px;
+  right: 10px;
   background-color: white;
   border-radius: 15px;
   padding: 6px 4px 4px 4px;
@@ -186,23 +184,41 @@ main > section:last-child {
   padding: 4px;
   margin: 4px;
   font-size: 20px;
-  bottom: 30px;
-  left: 20px;
+  bottom: 20px;
+  left: 10px;
 }
 
 /* table styling */
 
 .courseSearch{
   overflow: scroll;
+  position: relative;
   height: 100%;
   max-height: 250px;
 }
 
+#searchArea{
+  padding-bottom: 10px;
+  background-color: #c98c0c;
+  position: sticky;
+  top:0;
+}
+input[name = "searchBox"]{
+  width: 85%;
+  border-radius: 5px;
+}
+.submitButton{
+  width: 5%;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-image: url("../images/magnifying-glass.png");
+  background-size: cover;
+  background-position: center;
+}
 table {
   width: 100%;
   height: 100%;
   max-height: 250px;
-
   border-collapse: collapse;
   table-layout: fixed;
 }
@@ -212,7 +228,6 @@ td {
   text-align: left;
   border-right: 1px solid #000;
   overflow: auto;
-
 }
 tr {
   border-bottom: 2px solid #000;
