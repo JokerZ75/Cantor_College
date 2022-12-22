@@ -11,11 +11,22 @@
 </head>
 
 <body>
-    <header>
-        <?php
-        include("includes/header.php");
-        ?>
-    </header>
-</body>
+    <div class="container">
 
+        <header>
+            <?php
+            include("includes/header.php");
+            ?>
+        </header>
+        <main id = NonHome>
+            <section></section>
+            <section></section>
+        </main>
+        <footer>
+            <?php
+            include("includes/footer.php");
+            ?>
+        </footer>
+</body>
+</div>
 </html>

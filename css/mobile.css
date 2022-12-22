@@ -12,6 +12,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+#NonHome{
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 /* Header Styling */
 header {
@@ -134,12 +138,12 @@ main {
   width: 100%;
 }
 main > section {
-  margin: 0 10px 8px 10px;
+  margin: 5px 10px 8px 10px;
   padding: 12px;
   background-color: #c98c0c;
   border-radius: 15px;
 }
-main > section:first-child {
+main > section:first-child:nth-last-child(3) {
   margin-bottom: 0;
   padding-bottom: 6px;
   background-color: #e4a406;
@@ -199,6 +203,7 @@ main > section:last-child {
 
 #searchArea{
   padding-bottom: 10px;
+  padding-top: 10px;
   background-color: #c98c0c;
   position: sticky;
   top:0;
