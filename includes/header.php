@@ -56,4 +56,6 @@
         </li>
         <li><a href="about_us.html">Who are we?</a></li>
     </ul>
+    <script src="js/navController.js"></script>
+    <script src="js/findPage.js"> </script>
 </nav>
