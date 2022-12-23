@@ -58,6 +58,10 @@ footer {
   padding-bottom: 10px;
   width: 100%;
 }
+.footerContact > p > a{
+  color: blue;
+  font-weight: bold;
+}
 .footerContact > p {
   padding-bottom: 5px;
   padding-top: 5px;
@@ -248,7 +252,7 @@ td {
   overflow: auto;
 }
 td > a {
-  color: blue;
+  color: brown;
   font-weight: bold;
 }
 tr {
