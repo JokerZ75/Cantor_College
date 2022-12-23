@@ -280,3 +280,10 @@ tr {
   list-style: none;
   padding-left: 0;
 }
+dt{
+  font-weight: bold;
+}
+dd{
+  padding-left: 0;
+  margin-left: 0;
+}

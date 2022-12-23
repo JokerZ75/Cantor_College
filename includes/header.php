@@ -46,13 +46,13 @@
                     <a href="For_Students.php">Student Information</a>
                 </li>
                 <li>
-                    <a href="#">Staff Information</a>
+                    <a href="For_Staff.php">Staff Information</a>
                 </li>
             </ul>
         </li>
 
         <li>
-            <a href="Working_With_Business.html">Working with business</a>
+            <a href="Working_With_Business.php">Working with business</a>
         </li>
         <li><a href="about_us.php">Who are we?</a></li>
     </ul>
