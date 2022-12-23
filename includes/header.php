@@ -34,7 +34,7 @@
                     <a href="Facilities.php">Facilities</a>
                 </li>
                 <li>
-                    <a href="#">Learning Resources</a>
+                    <a href="Learning_Resources.php">Learning Resources</a>
                 </li>
             </ul>
         </li>
