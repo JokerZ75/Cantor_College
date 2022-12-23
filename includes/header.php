@@ -31,7 +31,7 @@
                 <img src="images/arrow-down-sign-to-navigate.png" alt="drop down arrow" /></a>
             <ul class="resourcesDropdownContent dropdownContent">
                 <li>
-                    <a href="#">Facilities</a>
+                    <a href="Facilities.php">Facilities</a>
                 </li>
                 <li>
                     <a href="#">Learning Resources</a>
