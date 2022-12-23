@@ -54,7 +54,7 @@
         <li>
             <a href="Working_With_Business.html">Working with business</a>
         </li>
-        <li><a href="about_us.html">Who are we?</a></li>
+        <li><a href="about_us.php">Who are we?</a></li>
     </ul>
     <script src="js/navController.js" defer></script>
     <script src="js/findPage.js" defer> </script>
