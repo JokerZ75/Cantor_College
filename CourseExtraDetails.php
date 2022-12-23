@@ -1,3 +1,12 @@
+<?php
+require_once("includes/config.php");
+$query = $_GET['Course_id'];
+$stmt = $mysqli->prepare("SELECT * FROM course_list_data WHERE Course_id = ?");
+$stmt->bind_param('s', $query);
+$stmt->execute();
+$result = $stmt->get_result();
+$obj = $result->fetch_object();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +27,19 @@
             include("includes/header.php");
             ?>
         </header>
-        <main id = NonHome>
-            <section></section>
-            <section></section>
+        <main id=NonHome>
+            <!-- Second Section On Page -->
+            <section>
+
+            </section>
+
+            <!-- First Section On Page -->
+            <section>
+                <?php
+                echo "<h2>h{$obj->CourseTitle}</h2>";
+                ?>
+                <h2>hi</h2>
+            </section>
         </main>
         <footer>
             <?php
@@ -29,4 +48,5 @@
         </footer>
 </body>
 </div>
+
 </html>

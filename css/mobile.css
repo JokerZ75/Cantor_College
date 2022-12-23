@@ -13,6 +13,7 @@ body {
   flex-direction: column;
 }
 #NonHome{
+  color: white;
   display: flex;
   flex-direction: column-reverse;
 }
