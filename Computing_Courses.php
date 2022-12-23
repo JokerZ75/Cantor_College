@@ -20,7 +20,7 @@ require_once("includes/config.php");
         <main id=NonHome>
             <!-- Second Section On Page -->
             <section>
-                <img src="images/Computer_lab_min.jpg" class = "imgSizer" alt="Computer Lab At Canotr College">
+                <img src="images/Networking_class_min.jpg" class = "imgSizer" alt="Computer Lab At Canotr College">
             </section>
             <!-- First Section On Page -->
             <section>

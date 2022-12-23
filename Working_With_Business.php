@@ -17,7 +17,7 @@
         <main id="NonHome">
             <!-- Second Section On Page-->
             <section>
-                <img src="images/Cantor_Computing_Playstation_Lab.jpg" class="imgSizer" alt="Play Station Lab At Cantor College">
+                <img src="images/Weclome_To_Sheffield.jpg" class="imgSizer" alt="Play Station Lab At Cantor College">
             </section>
             <!-- First Section On Page -->
             <section>
