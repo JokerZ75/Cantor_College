@@ -14,7 +14,7 @@ $obj = $result->fetch_object();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Details</title>
+    <title>Cantor College || <?php echo "{$obj->CourseTitle}";?> (Details)</title>
     <link rel="stylesheet" href="css/mobile.css" />
 
 </head>
@@ -30,15 +30,31 @@ $obj = $result->fetch_object();
         <main id=NonHome>
             <!-- Second Section On Page -->
             <section>
-
+                <table>
+                    <tr>
+                        <th scope="col">Course title</th>
+                        <th scope="col">Course type</th>
+                        <th scope="col">Couse award</th>
+                        <th scope="col">Ucas Code</th>
+                        <th scope="col">Ucas Points</th>
+                    </tr>
+                    <tr>
+                        <?php
+                            echo "<td>{$obj->CourseTitle}</td>";
+                            echo "<td>{$obj->CourseType}</td>";
+                            echo "<td>{$obj->CourseAwardName}</td>";
+                            echo "<td>{$obj->UcasCode}</td>";
+                            echo "<td>{$obj->UcasPoints}</td>";
+                        ?>
+                    </tr>
+                </table>
             </section>
 
             <!-- First Section On Page -->
             <section>
                 <?php
-                echo "<h2>h{$obj->CourseTitle}</h2>";
+                echo "<p>{$obj->CourseSummary}<br><br>Within {$obj->StudyLength} with {$obj->ModeOfAttendance} attendance starting {$obj->YearOfEntry}.<br>Is full: {$obj->NoLongerRecruiting}.<br>Foundation Year Available: {$obj->HasFoundationYear}.</p>";
                 ?>
-                <h2>hi</h2>
             </section>
         </main>
         <footer>
