@@ -43,7 +43,7 @@
                 <img src="images/arrow-down-sign-to-navigate.png" alt="drop down arrow" /></a>
             <ul class="informationDropdownContent dropdownContent">
                 <li>
-                    <a href="#">Student Information</a>
+                    <a href="For_Students.php">Student Information</a>
                 </li>
                 <li>
                     <a href="#">Staff Information</a>
