@@ -1,7 +1,9 @@
 <div id="headerMainContent">
-    <a href="index.php">
-        <img src="images/logo_min.png" alt="Cantor College Logo" />
-    </a>
+    <div>
+        <a href="index.php">
+            <img src="images/logo_min.png" alt="Cantor College Logo" />
+        </a>
+    </div>
     <div class="CurrentPage">
         <h1>Home</h1>
     </div>
