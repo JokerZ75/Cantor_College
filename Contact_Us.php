@@ -1,4 +1,18 @@
-<?php require_once("includes/config.php"); ?>
+<?php require_once("includes/config.php");
+$Fname = $_POST['FirstName'] ?? null;
+$Lname = $_POST['LastName'] ?? null;
+$Email = $_POST['Email'] ?? null;
+$Message = $_POST['Message'] ?? null;
+$ValidInput = false;
+if (($Fname && $Lname && $Email && $Message) != (null || "")) {
+    $ValidInput = true;
+    $Fname = trim($Fname);
+    $Lname = trim($Lname);
+    $Email = trim($Email);
+    $Message = trim($Message);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +31,24 @@
         </header>
         <main id="NonHome">
             <!-- Second Section On Page -->
-            <section></section>
+            <section>
+                <?php
+                if ($ValidInput == true) {
+                    $fullname = $Fname . " " . $Lname;  
+                    echo "<p>Thank you <strong> {$fullname} </strong>. Your message of <strong> {$Message} </strong> has been submitted with the following email <strong> {$Email} </strong>. </p>";
+                    // Help stop repeat inputs from the same email with the same message
+                    $stmt = $mysqli->prepare("SELECT * FROM user_messages WHERE Message = ? AND Email = ?"); 
+                    $stmt->bind_param('ss', $Message, $Email);
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    if ($result->num_rows == 0) {
+                        $stmt = $mysqli->prepare("INSERT INTO user_messages (FirstName, LastName, Email, Message) VALUES (?,?,?,?)");
+                        $stmt->bind_param('ssss', $Fname, $Lname, $Email, $Message);
+                        $stmt->execute();
+                    }
+                }
+                ?>
+            </section>
             <!-- First Section On Page -->
             <section>
                 <div>
@@ -39,7 +70,7 @@
                         </div>
                         <div>
                             <label for="Message">Message:</label>
-                            <textarea name="Message" placeholder="Your Message"></textarea>
+                            <textarea name="Message" placeholder="Your Message (Max character length 500)" maxlength="500"></textarea>
                         </div>
                         <div>
                             <input type="submit" value="Submit" />
