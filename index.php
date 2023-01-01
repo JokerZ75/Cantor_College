@@ -10,6 +10,7 @@ require_once("includes/config.php");
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cantor College || Home</title>
   <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1410px)">
 </head>
 
 <body>

@@ -3,7 +3,8 @@
   const dropDown = document.querySelectorAll(".Dropdown");
   const nav = document.querySelector("nav");
   const navHeight = nav.offsetHeight;
-  const dropDownHeight = document.querySelector(".dropdownContent").offsetHeight;
+  const dropDownHeight =
+    document.querySelector(".dropdownContent").offsetHeight;
 
   for (let i = 0; i < dropDown.length; i++) {
     dropDown[i].addEventListener("click", (ev) => {
@@ -20,24 +21,26 @@
         });
 
         dropdownContent.style.height = "4.75em";
-        nav.style.height = navHeight - (dropDownHeight * (dropDown.length - 2)) + "px";
       } else {
         dropdownContent.style.height = "0em";
-        nav.style.height = navHeight - (dropDownHeight * (dropDown.length - 1)) + "px";
       }
     });
     dropDown[i].click();
   }
 
   burger.addEventListener("click", () => {
-    if (nav.style.height == "0em") {
-      nav.style.height =  navHeight - (dropDownHeight * (dropDown.length - 1)) + "px";
+    if (window.getComputedStyle(burger).display == 'block') {
+      if (nav.style.height == "0em") {
+        nav.style.height =
+          navHeight - dropDownHeight * (dropDown.length - 1) + "px";
+      } else {
+        nav.style.height = "0em";
+        let allDropDown = document.querySelectorAll(".dropdownContent");
+        allDropDown.forEach((element) => {
+          element.style.height = "0em";
+        });
+      }
     } else {
-      nav.style.height = "0em";
-      let allDropDown = document.querySelectorAll(".dropdownContent");
-      allDropDown.forEach((element) => {
-        element.style.height = "0em";
-      });
     }
   });
   burger.click();
