@@ -1,52 +1,40 @@
-var doneMobile;
-var doneDesktop;
+let close = (query = null) => {
+  if (query == null) {
+    $(".dropDownContent").each(function () {
+      $(this).slideUp();
+    });
+  }
+  $(".dropdownContent").each(function () {
+    if ("." + $(this)[0].classList[0] != query) {
+      $(this).slideUp();
+    }
+  });
+};
+let navChange = () => {
+  if ($(window).width() >= 1410) {
+    $("nav").slideDown("slow");
+  }
+};
+
 (function () {
+  const dropDowns = $(".Dropdown");
   doneMobile = false;
   doneDesktop = false;
   $("#burger").on("click", () => {
     $("nav").slideToggle("slow");
+    close();
   });
   $("#burger").click();
 
   $(".Dropdown").each(function () {
     $(this).on("click", (ev) => {
       ev.preventDefault();
-      let query = "." + ev.target.classList[1].toLowerCase() + "DropdownContent"
+      let query =
+        "." + ev.target.classList[1].toLowerCase() + "DropdownContent";
       $(query).slideToggle("fast");
-        console.log(ev.target.classList[1]);
-      $(".dropdownContent").each(function () {
-        if ("." + $(this)[0].classList[0] != query) {
-          $(this).slideUp();
-        }
-      });
+      close(query);
     });
-    $(this).click();
   });
-
-  $(window).resize(function () {
-    nav();
-  });
+  close();
+  setInterval(navChange, 2000);
 })();
-let nav = () => {
-//   if ($(window).width() < 1410 && doneMobile == false) {
-//     doneMobile = true;
-//     doneDesktop = false;
-//     close();
-//     $("#burger").on("click", () => {
-//       $("nav").slideToggle("slow");
-//     });
-//     $("#burger").click();
-//   } else if ($(window).width() > 1410 && doneDesktop == false) {
-//     doneDesktop = true;
-//     doneMobile = false;
-//     close();
-//   }
-};
-
-let close = () => {
-//   $(".Dropdown").each(function () {
-//     if ($(this).is(":visible")) {
-//       $(this).click();
-//     }
-//   });
-};
