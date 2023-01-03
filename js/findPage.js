@@ -5,6 +5,19 @@
   } else {
     PageArea.innerHTML = "<h1>" + document.title + "</h1>";
   }
+  console.log(PageArea.innerHTML);
+  let NavElements = document.querySelectorAll("nav > ul > li a");
+  console.info(NavElements);
+  NavElements.forEach(link => {
+    if (link.parentElement.parentElement.classList[1] == "dropdownContent" && PageArea.innerHTML.includes(link.innerHTML)){
+      link.classList.add("SelectedPage");
+      let dropDown = link.parentElement.parentElement.parentElement.children[0];
+      dropDown.classList.add("SelectedPage");
+    }
+    else if (PageArea.innerHTML.includes(link.innerHTML)) {
+      link.classList.add("SelectedPage");
+    }
+  });
 
   //   let location = window.location.pathname.split("/");
   //   let pageName = location[location.length - 1];

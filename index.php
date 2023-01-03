@@ -10,7 +10,7 @@ require_once("includes/config.php");
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cantor College || Home</title>
   <link rel="stylesheet" href="css/mobile.css" />
-  <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1410px)">
+  <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1295px)">
 </head>
 
 <body>
@@ -21,8 +21,7 @@ require_once("includes/config.php");
       ?>
     </header>
     <main>
-      <section>
-        <div id=imgGallary>
+        <div id=imgGallary class = "side">
           <img src="" class="imgGal imgSizer" alt="Gallary of images of Cantor College" />
           <button type="button" onclick="location.href = 'about_us.php' " class="aboutUsBtn">
             About Us
@@ -34,7 +33,6 @@ require_once("includes/config.php");
             <img src="images/circle.png" alt="" />
           </div>
         </div>
-      </section>
       <section>
         <div class="courseSearch">
           <form method ="get" action="index.php" id = "searchArea">

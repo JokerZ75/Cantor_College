@@ -1,31 +1,32 @@
 let close = (query = null) => {
   if (query == null) {
     $(".dropDownContent").each(function () {
-      $(this).slideUp();
+      $(this).slideUp("slow");
     });
   }
   $(".dropdownContent").each(function () {
     if ("." + $(this)[0].classList[0] != query) {
-      $(this).slideUp();
+      $(this).slideUp("slow");
     }
   });
 };
 let navChange = () => {
-  if ($(window).width() >= 1410) {
+  if ($(window).width() >= 1295) {
     $("nav").slideDown("slow");
   }
 };
 
 (function () {
   const dropDowns = $(".Dropdown");
-  doneMobile = false;
-  doneDesktop = false;
   $("#burger").on("click", () => {
     $("nav").slideToggle("slow");
+    navChange();
     close();
   });
-  $("#burger").click();
-
+  if ($(window).width() <= 1295) {
+    $("nav").slideUp("slow");
+  }
+  
   $(".Dropdown").each(function () {
     $(this).on("click", (ev) => {
       ev.preventDefault();
@@ -36,5 +37,5 @@ let navChange = () => {
     });
   });
   close();
-  setInterval(navChange, 2000);
+  setInterval(navChange, 1500);
 })();
