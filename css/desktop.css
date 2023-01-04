@@ -2,8 +2,6 @@
   min-height: auto;
 }
 
-
-
 /* Desktop Nav Styling */
 #burger {
   display: none;
@@ -12,7 +10,7 @@ nav {
   display: flex;
   overflow: auto;
   padding: 0 5px 0 5px;
-  margin:  0 20px 4px 10px;
+  margin: 0 20px 4px 10px;
 }
 nav > ul {
   display: flex;
@@ -24,8 +22,7 @@ nav > ul li {
   margin-top: 4px;
   flex: 1 1 5%;
 }
-nav > ul > li:nth-child(5)
-{
+nav > ul > li:nth-child(5) {
   flex: 1 1 10%;
   min-width: 310px;
 }
@@ -35,7 +32,7 @@ nav > ul > li a {
   padding-bottom: 5px;
   border-radius: 0;
 }
-nav > ul> li:first-child > a{
+nav > ul > li:first-child > a {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -43,11 +40,11 @@ nav > ul> li:first-child > a{
 nav > ul > li:last-child {
   border-bottom: none;
 }
-nav > ul > li  a:hover {
+nav > ul > li a:hover {
   background-color: #c98c0c;
 }
-.SelectedPage{
-  text-decoration: underline !important; 
+.SelectedPage {
+  text-decoration: underline !important;
   background-color: #e4a406 !important;
 }
 
@@ -61,7 +58,7 @@ main {
   display: grid;
   column-gap: 15px;
 }
-#imgGallary{
+#imgGallary {
   margin: 100px 20px 0 0;
   max-width: 900px;
   max-height: 500px;
@@ -73,6 +70,8 @@ main {
 }
 .aboutUsBtn {
   bottom: 25px;
+  width: 300px;
+  height:75px;
   left: 20px;
 }
 .imgSizer {
@@ -85,19 +84,54 @@ main {
 main > section {
   margin: 30px 5px 20px 30px;
 }
-main > section:nth-child(2){
+main > section:nth-child(2) {
   max-height: 400px;
-  grid-row-start:  1;
+  grid-row-start: 1;
   grid-column: 1;
-
 }
-main > section:last-child{
+main > section:last-child {
   grid-row: 2;
   grid-column: 1;
   margin-top: 0;
-
 }
-.side{
+.side {
   grid-row: 1 / span 2;
   grid-column: 2;
+}
+
+/* Non Home Styling */
+#NonHome {
+  color: #fff;
+  display: grid;
+  gap: 0px;
+}
+#NonHome > section {
+  grid-row: 1;
+  position: relative;
+  grid-column: 1;
+  margin-left: 50%;
+  margin-top: 12%;
+  max-width: 600px;
+  max-height: 600px;
+  z-index: -1;
+}
+#NonHome > section:nth-child(2) {
+  max-height: 85%;
+  position: relative;
+  max-width:55%;
+  margin-right: 0;
+  margin-left: 6%;
+  margin-top:40px;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 0;
+}
+#NonHome > section:hover {
+  z-index: 1;
+}
+.NonHomeSizer {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }

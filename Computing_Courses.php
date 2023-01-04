@@ -22,7 +22,7 @@ require_once("includes/config.php");
         <main id=NonHome>
             <!-- Second Section On Page -->
             <section>
-                <img src="images/Networking_class_min.jpg" class="imgSizer" alt="Computer Lab At Canotr College">
+                <img src="images/Networking_class_min.jpg" class="imgSizer NonHomeSizer" alt="Computer Lab At Canotr College">
             </section>
             <!-- First Section On Page -->
             <section>
@@ -74,7 +74,7 @@ require_once("includes/config.php");
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="NonHomefooter">
             <?php include("includes/footer.php"); ?>
         </footer>
 

@@ -74,7 +74,7 @@ require_once("includes/config.php");
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="NonHomefooter">
             <?php include("includes/footer.php"); ?>
         </footer>
 
