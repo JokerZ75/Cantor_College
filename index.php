@@ -22,7 +22,7 @@ require_once("includes/config.php");
     </header>
     <main>
         <div id=imgGallary class = "side">
-          <img src="" class="imgGal imgSizer" alt="Gallary of images of Cantor College" />
+          <img src="" class="imgGal HomeSizer" alt="Gallary of images of Cantor College" />
           <button type="button" onclick="location.href = 'about_us.php' " class="aboutUsBtn">
             About Us
             <img src="images/right-arrow.png" alt="arrow to about us" width="15px" />

@@ -10,32 +10,35 @@ let close = (query = null) => {
     }
   });
 };
-let navChange = () => {
-  if ($(window).width() >= 1295) {
-    $("nav").slideDown("slow");
+
+function NavChange(x) {
+  if (x.matches) {
+    close();
+    $("nav").slideDown("fast");
+  } else {
+    close();
+    $("nav").slideUp("fast");
   }
-};
+}
 
 (function () {
   const dropDowns = $(".Dropdown");
+
   $("#burger").on("click", () => {
     $("nav").slideToggle("slow");
-    navChange();
     close();
   });
-  if ($(window).width() <= 1295) {
-    $("nav").slideUp("slow");
-  }
-  
   $(".Dropdown").each(function () {
     $(this).on("click", (ev) => {
       ev.preventDefault();
       let query =
         "." + ev.target.classList[1].toLowerCase() + "DropdownContent";
-      $(query).slideToggle("fast");
       close(query);
+      $(query).slideToggle("fast");
     });
   });
+  let x = window.matchMedia("only screen and (min-width : 1295px)");
+  NavChange(x);
+  x.addListener(NavChange);
   close();
-  setInterval(navChange, 1500);
 })();
