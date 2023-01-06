@@ -28,6 +28,12 @@ function slidingSections(x) {
       });
     });
   } else {
+    let sections = document.querySelectorAll("#NonHome > section");
+    sections[0].classList.remove("SectionOneClicked");
+    sections[1].classList.remove("SectionTwoClicked");
+    sections[0].classList.remove("clickable");
+    sections[1].classList.remove("clickable");
+
   }
 }
 
