@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantor College || Staff Information</title>
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1295px)">
+
 </head>
 
 <body>
@@ -52,6 +54,8 @@
             <?php include("includes/footer.php") ?>
         </footer>
     </div>
+    <script src="js/NonHomeSelector.js"></script>
+
 </body>
 
 </html>

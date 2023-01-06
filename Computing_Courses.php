@@ -79,7 +79,7 @@ require_once("includes/config.php");
         </footer>
 
     </div>
-
+    <script src="js/NonHomeSelector.js"></script>
 </body>
 
 </html>

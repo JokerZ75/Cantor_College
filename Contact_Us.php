@@ -22,6 +22,8 @@ if (($Fname && $Lname && $Email && $Message) != (null || "")) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantor College || Contact Us</title>
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1295px)">
+
 </head>
 
 <body>
@@ -82,6 +84,7 @@ if (($Fname && $Lname && $Email && $Message) != (null || "")) {
         <footer>
             <?php include("includes/footer.php"); ?>
         </footer>
+        <script src="js/NonHomeSelector.js"></script>
     </div>
 </body>
 

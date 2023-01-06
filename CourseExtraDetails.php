@@ -14,8 +14,10 @@ $obj = $result->fetch_object();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cantor College || <?php echo "{$obj->CourseTitle}";?> (Details)</title>
+    <title>Cantor College || <?php echo "{$obj->CourseTitle}"; ?> (Details)</title>
     <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1295px)">
+
 
 </head>
 
@@ -40,11 +42,11 @@ $obj = $result->fetch_object();
                     </tr>
                     <tr>
                         <?php
-                            echo "<td>{$obj->CourseTitle}</td>";
-                            echo "<td>{$obj->CourseType}</td>";
-                            echo "<td>{$obj->CourseAwardName}</td>";
-                            echo "<td>{$obj->UcasCode}</td>";
-                            echo "<td>{$obj->UcasPoints}</td>";
+                        echo "<td>{$obj->CourseTitle}</td>";
+                        echo "<td>{$obj->CourseType}</td>";
+                        echo "<td>{$obj->CourseAwardName}</td>";
+                        echo "<td>{$obj->UcasCode}</td>";
+                        echo "<td>{$obj->UcasPoints}</td>";
                         ?>
                     </tr>
                 </table>
@@ -62,7 +64,9 @@ $obj = $result->fetch_object();
             include("includes/footer.php");
             ?>
         </footer>
+        <script src="js/NonHomeSelector.js"></script>
+    </div>
 </body>
-</div>
+
 
 </html>

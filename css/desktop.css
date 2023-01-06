@@ -111,45 +111,59 @@ main > section:last-child {
   margin-top: 20%;
   max-width: 600px;
   max-height: 600px;
-  z-index: -1;
-  transition: all ease-in-out 300ms ;
-
-}
+  overflow: hidden;
+  z-index: 0;
+  transition: all ease-in-out 300ms;}
 #NonHome > section:nth-child(2) {
   max-height: 700px;
-  max-width:55%;
+  max-width: 55%;
   margin-left: 6%;
-  margin-top:40px;
+  margin-top: 40px;
   grid-row: 1;
+  overflow: scroll;
   grid-column: 1;
-  z-index: 0;
-  transition: all ease-in-out 600ms;
-}
-/* #NonHome:hover section:nth-child(2){
+  z-index: 1;
+  transition: all ease-in-out 600ms;}
+
+  /* ATTEMPT OF PURE CSS SOLUTION */
+/* #NonHome > section:nth-child(1):hover + section:nth-child(2) {
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden;
   margin-left: 50%;
-  margin-top:20%;
-  z-index: -1;
-  transition: all ease-in-out 300ms ;
-}
-#NonHome:hover section:nth-child(1){
-  max-width:55%;
-  margin-left: 6%;
-  margin-top:40px;
+  margin-top: 20%;
   z-index: 0;
-  transition: all ease-in-out 600ms;
+  transition: margin-left ease-in-out 300ms, margin-top ease-in-out 300ms, height ease-in-out 300ms, width ease-in-out  300ms;
+}
+#NonHome section:nth-child(1):hover {
+  max-width: 55%;
+  margin-left: 6%;
+  margin-top: 40px;
+  z-index: 1;
+  transition: margin-left ease-in-out 600ms, margin-top ease-in-out 600ms,height ease-in-out 600ms, width ease-in-out 600ms;
 } */
-section:nth-child(1):hover{
-  margin-left: 6% !important;
-  margin-top:40px !important;
+
+#NonHome > section.SectionTwoClicked {
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden;
+  margin-left: 50%;
+  margin-top: 20%;
+  z-index: 0;
+  transition: all ease-in-out 300ms;
+}
+#NonHome > section.SectionOneClicked {
+  max-width: 55%;
+  margin-left: 6%;
+  margin-top: 40px;
+  overflow: scroll;
   z-index: 1;
   transition: all ease-in-out 600ms;
 }
-section:nth-child(1):hover + section:nth-child(2){
-  margin-left: 50% !important;
-  margin-top: 20% !important;
-  z-index: -1;
-  transition: all ease-in-out 300ms ;
+.clickable{
+  cursor:pointer;
 }
+
 .HomeSizer {
   width: 100%;
   height: auto;
