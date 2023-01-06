@@ -37,7 +37,7 @@ function NavChange(x) {
       $(query).slideToggle("fast");
     });
   });
-  let x = window.matchMedia("only screen and (min-width : 1295px)");
+  let x = window.matchMedia("only screen and (min-width : 1190px)");
   NavChange(x);
   x.addListener(NavChange);
   close();
