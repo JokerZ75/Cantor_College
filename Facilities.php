@@ -19,12 +19,14 @@
         <main id="NonHome">
             <!-- Second Section On Page -->
             <section>
-                <div id=imgGallary>
-                    <img src="" class="imgGal imgSizer" alt="Gallary of images of Cantor Facilities" />
-                    <div class="imageIndicator">
-                        <img src="images/circle.png" alt="" />
-                        <img src="images/circle.png" alt="" />
-                        <img src="images/circle.png" alt="" />
+                <div id="imgGallary">
+                    <div id="imageGalHolder">
+                        <img src="images/Cantor_Lecture_Theatre 3_min.jpg" class="imgGal imgSizer" alt="Gallary of images of Cantor Facilities" />
+                        <div class="imageIndicator">
+                            <img src="images/circle.png" alt="" />
+                            <img src="images/circle.png" alt="" />
+                            <img src="images/circle.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </section>

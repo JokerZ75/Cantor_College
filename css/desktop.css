@@ -36,9 +36,8 @@ nav > ul > li a {
   margin-left: 10px;
   padding-left: 5px;
   padding-bottom: 5px;
-  border-radius: 0;  
-  text-overflow:hidden;
-
+  border-radius: 0;
+  text-overflow: hidden;
 }
 nav > ul > li:first-child > a {
   border-top-left-radius: 8px;
@@ -125,7 +124,8 @@ main > section:last-child {
   max-height: 600px;
   overflow: hidden;
   z-index: 0;
-  transition: all ease-in-out 300ms;}
+  transition: all ease-in-out 300ms;
+}
 #NonHome > section:nth-child(2) {
   max-height: 700px;
   max-width: 55%;
@@ -135,9 +135,9 @@ main > section:last-child {
   overflow: scroll;
   grid-column: 1;
   z-index: 1;
-  transition: all ease-in-out 600ms;}
-
-  /* ATTEMPT OF PURE CSS SOLUTION */
+  transition: all ease-in-out 600ms;
+}
+/* ATTEMPT OF PURE CSS SOLUTION */
 /* #NonHome > section:nth-child(1):hover + section:nth-child(2) {
   max-width: 600px;
   max-height: 600px;
@@ -165,6 +165,7 @@ main > section:last-child {
   transition: all ease-in-out 300ms;
 }
 #NonHome > section.SectionOneClicked {
+  /* max-height: 700px; */
   max-width: 55%;
   margin-left: 6%;
   margin-top: 40px;
@@ -172,8 +173,11 @@ main > section:last-child {
   z-index: 1;
   transition: all ease-in-out 600ms;
 }
-.clickable{
-  cursor:pointer;
+#imageGalHolder{
+  position: relative;
+}
+.clickable {
+  cursor: pointer;
 }
 
 .HomeSizer {
@@ -182,4 +186,12 @@ main > section:last-child {
   max-width: 666px;
   min-height: 500px;
   max-height: 500px;
+}
+#NonHome > section > div#imgGallary {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+#NonHome > section > div#imgGallary > .imageIndicator {
+  bottom: 50px;
 }

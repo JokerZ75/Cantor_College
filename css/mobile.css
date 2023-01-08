@@ -169,14 +169,19 @@ main > section:last-child {
   width: 100%;
   height: auto;
 }
+.HomeSizer {
+  width: 100%;
+  height: auto;
+}
+#NonHome >
 .imgGal {
   min-height: 277.5px;
 }
 .imageIndicator {
   display: inline;
   position: absolute;
-  bottom: 20px;
-  right: 10px;
+  bottom: 30px;
+  right: 20px;
   background-color: white;
   border-radius: 15px;
   padding: 6px 4px 4px 4px;
@@ -197,8 +202,8 @@ main > section:last-child {
   padding: 4px;
   margin: 4px;
   font-size: 20px;
-  bottom: 20px;
-  left: 10px;
+  bottom: 30px;
+  left: 20px;
 }
 
 /* Search Area On Home Styling and Design and Computing Page */
