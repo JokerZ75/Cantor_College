@@ -10,6 +10,7 @@ let imageGallary = document.querySelector(".imgGal");
 (function () {
   ChangeImage();
   setInterval(ChangeImage, 5000);
+  imageGallary.addEventListener("click", () => ChangeImage());
 })();
 
 function ChangeImage() {
