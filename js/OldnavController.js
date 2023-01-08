@@ -1,4 +1,5 @@
 (function () {
+  // Old drop down semi-functional with desktop works with Mobile
   const burger = document.getElementById("burger");
   const dropDown = document.querySelectorAll(".Dropdown");
   const nav = document.querySelector("nav");

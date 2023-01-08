@@ -59,7 +59,7 @@ footer {
   width: 100%;
 }
 .footerContact > p > a {
-  color: blue;
+  color: rgb(7, 12, 97);
   font-weight: bold;
 }
 .footerContact > p {
@@ -130,6 +130,7 @@ nav > ul > li > a:hover {
 .dropdownContent > li > a {
   display: inline-block;
   width: 100%;
+  border-radius: 5px;
   background-color: #a37412;
   color: white;
   font-weight: bold;
@@ -312,4 +313,10 @@ input[type="email"],
   padding: 15px;
   font-size: 1.5em;
   width: 100%;
+}
+dl > dt:first-child{
+  margin-top: 0;
+}
+dt{
+  margin-top: 10px;
 }

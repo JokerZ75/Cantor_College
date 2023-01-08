@@ -42,7 +42,7 @@
                     </p>
                 </div>
                 <div>
-                    <h3>Facilities include:</h3>
+                    <h2>Facilities include:</h2>
                     <ul>
                         <li>wi-fi technology</li>
                         <li>pool teaching rooms, including classrooms to teach from 25 - 80 students</li>

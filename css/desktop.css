@@ -47,6 +47,9 @@ nav > ul > li:last-child > a {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.dropdownContent > li > a {
+  border-radius: 0;
+}
 
 nav > ul > li:last-child {
   border-bottom: none;
