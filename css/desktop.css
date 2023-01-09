@@ -47,8 +47,14 @@ nav > ul > li:last-child > a {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.dropdownContent {
+  margin-top: 3px;
+}
 .dropdownContent > li > a {
   border-radius: 0;
+}
+.dropdownContent > li:last-child {
+  padding-bottom: 0;
 }
 
 nav > ul > li:last-child {
@@ -176,7 +182,7 @@ main > section:last-child {
   z-index: 1;
   transition: all ease-in-out 600ms;
 }
-#imageGalHolder{
+#imageGalHolder {
   position: relative;
 }
 .clickable {

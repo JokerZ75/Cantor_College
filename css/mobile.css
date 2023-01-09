@@ -132,6 +132,9 @@ nav > ul > li > a:hover {
 .dropdownContent > li {
   border-bottom: 2px solid #4e3f19;
 }
+.dropdownContent > li:last-child {
+  padding-bottom: 15px;
+}
 .dropdownContent > li > a {
   display: inline-block;
   width: 100%;
