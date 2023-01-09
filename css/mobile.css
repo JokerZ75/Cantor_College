@@ -89,10 +89,13 @@ footer {
 nav {
   display: flex;
   flex-direction: column;
-  padding: 0 5px 0 5px;
+  overflow: hidden;
+  padding: 0 5px 8px 5px;
+  transition: height ease-in-out 800ms;
 }
 nav > ul {
   list-style: none;
+  overflow: hidden;
   margin: 0;
   padding-left: 0;
 }
@@ -120,8 +123,10 @@ nav > ul > li > a:hover {
 .dropdownContent {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   list-style: none;
   margin: 0;
+  transition: height ease-in-out 600ms;
   padding-left: 0;
 }
 .dropdownContent > li {

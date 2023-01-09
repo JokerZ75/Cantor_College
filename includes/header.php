@@ -58,7 +58,7 @@
         </li>
         <li><a href="about_us.php">Who are we?</a></li>
     </ul>
-    <script src="js/jquery-3.6.1.min.js" defer></script>
-    <script src="js/nav.js" defer></script>
+    <!-- <script src="js/jquery-3.6.1.min.js" defer></script> -->
+    <script src="js/navPlainJs.js" defer></script>
     <script src="js/findPage.js" defer> </script>
 </nav>
