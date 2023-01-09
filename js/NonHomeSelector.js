@@ -38,7 +38,7 @@ function slidingSections(x) {
 }
 
 (function () {
-  let x = window.matchMedia("only screen and (min-width : 1190px)");
+  let x = window.matchMedia("only screen and (min-width : 1195px)");
   slidingSections(x);
   x.addListener(slidingSections);
 })();

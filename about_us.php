@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantor College || About Us</title>
     <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1190px)">
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 1195px)">
 
 </head>
 

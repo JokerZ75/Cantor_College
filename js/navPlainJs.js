@@ -78,7 +78,7 @@
     }
   };
 
-  let x = window.matchMedia("only screen and (min-width : 1190px)");
+  let x = window.matchMedia("only screen and (min-width : 1195px)");
   NavChange(x);
   x.addListener(NavChange);
 
