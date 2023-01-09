@@ -16,7 +16,7 @@ nav > ul {
   display: flex;
   list-style: none;
 }
-nav > ul li {
+nav > ul > li {
   border-bottom: 2px solid #4e3f19;
   padding-right: 10px;
   margin-top: 4px;
