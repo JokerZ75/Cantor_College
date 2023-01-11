@@ -5,9 +5,7 @@
   } else {
     PageArea.innerHTML = "<h1>" + document.title + "</h1>";
   }
-  console.log(PageArea.innerHTML);
   let NavElements = document.querySelectorAll("nav > ul > li a");
-  console.info(NavElements);
   NavElements.forEach(link => {
     if (link.parentElement.parentElement.classList[1] == "dropdownContent" && PageArea.innerHTML.includes(link.innerHTML)){
       link.classList.add("SelectedPage");
